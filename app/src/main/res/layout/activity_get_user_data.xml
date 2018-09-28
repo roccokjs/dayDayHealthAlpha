@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.GetUserDataActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textViewName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/editTextName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="이름"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textViewAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="age" />
+
+                <EditText
+                    android:id="@+id/editTextAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="나이"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textViewHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Height" />
+
+                <EditText
+                    android:id="@+id/editTextHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="키"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textViewWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weight" />
+
+                <EditText
+                    android:id="@+id/editTextWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="몸무게"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textViewSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sex" />
+
+                <EditText
+                    android:id="@+id/editTextSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="남 : 1 / 여 : 2"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/buttonCommit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="기입"
+                    android:layout_gravity="center"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

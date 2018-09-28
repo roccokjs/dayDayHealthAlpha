@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:layout_editor_absoluteY="81dp">
+
+	<TextView
+		android:id="@+id/weightText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="체중"
+		android:textSize="30dp"
+		app:layout_constraintBottom_toTopOf="@+id/exerciseText"
+		app:layout_constraintEnd_toEndOf="@+id/exerciseText"
+		app:layout_constraintStart_toStartOf="@+id/exerciseText"
+		app:layout_constraintTop_toTopOf="parent"/>
+
+	<TextView
+		android:id="@+id/exerciseText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="운동"
+		android:textSize="30dp"
+		app:layout_constraintBottom_toTopOf="@+id/smokingText"
+		app:layout_constraintEnd_toEndOf="@+id/smokingText"
+		app:layout_constraintStart_toStartOf="@+id/smokingText"
+		app:layout_constraintTop_toBottomOf="@+id/weightText"/>
+
+	<TextView
+		android:id="@+id/smokingText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="금연"
+		android:textSize="30dp"
+		app:layout_constraintBottom_toTopOf="@+id/drinkingText"
+		app:layout_constraintEnd_toEndOf="@+id/drinkingText"
+		app:layout_constraintStart_toStartOf="@+id/drinkingText"
+		app:layout_constraintTop_toBottomOf="@+id/exerciseText"/>
+
+	<TextView
+		android:id="@+id/drinkingText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="금주"
+		android:textSize="30dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@+id/dringkingSwitch"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/smokingText"/>
+
+	<Switch
+		android:id="@+id/exerciseSwitch"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintBottom_toBottomOf="@+id/exerciseText"
+		app:layout_constraintEnd_toEndOf="@+id/smokingSwitch"
+		app:layout_constraintStart_toStartOf="@+id/smokingSwitch"
+		app:layout_constraintTop_toTopOf="@+id/exerciseText"/>
+
+	<Switch
+		android:id="@+id/smokingSwitch"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintBottom_toBottomOf="@+id/smokingText"
+		app:layout_constraintEnd_toEndOf="@+id/dringkingSwitch"
+		app:layout_constraintStart_toStartOf="@+id/dringkingSwitch"
+		app:layout_constraintTop_toTopOf="@+id/smokingText"/>
+
+	<Switch
+		android:id="@+id/dringkingSwitch"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintBottom_toBottomOf="@+id/drinkingText"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.5"
+		app:layout_constraintStart_toEndOf="@+id/drinkingText"
+		app:layout_constraintTop_toTopOf="@+id/drinkingText"/>
+
+	<EditText
+		android:id="@+id/weightInputText"
+		android:layout_width="75dp"
+		android:layout_height="wrap_content"
+		android:ems="10"
+		android:inputType="textPersonName"
+		app:layout_constraintBottom_toBottomOf="@+id/weightText"
+		app:layout_constraintEnd_toEndOf="@+id/exerciseSwitch"
+		app:layout_constraintStart_toStartOf="@+id/exerciseSwitch"
+		app:layout_constraintTop_toTopOf="@+id/weightText"/>
+
+	<TextView
+		android:id="@+id/textView13"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:text="Kg"
+		android:textSize="30dp"
+		app:layout_constraintBottom_toBottomOf="@+id/weightInputText"
+		app:layout_constraintStart_toEndOf="@+id/weightInputText"
+		app:layout_constraintTop_toTopOf="@+id/weightInputText"
+		app:layout_constraintVertical_bias="1.0"/>
+
+</android.support.constraint.ConstraintLayout>
