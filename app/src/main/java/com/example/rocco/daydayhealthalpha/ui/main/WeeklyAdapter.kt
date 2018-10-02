@@ -1,17 +1,13 @@
 package com.example.rocco.daydayhealthalpha.ui.main
 
 import android.support.v4.view.PagerAdapter
-import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.rocco.daydayhealthalpha.R
 
 class WeeklyAdapter : PagerAdapter() {
 
-    var onClickImage: (() -> Unit)? = null
-
     override fun getCount(): Int {
-        return 1000
+        return 10000
     }
 
     override fun isViewFromObject(view: View, `object`: Any): Boolean {
@@ -26,14 +22,11 @@ class WeeklyAdapter : PagerAdapter() {
      */
 
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
-        val view = LayoutInflater.from(container.context).inflate(R.layout.layout_weekly_item, container, false)
-        container.addView(view)
-        bind(position, view)
-        return view
-    }
+        val weeklyView = WeeklyView(container.context)
+        container.addView(weeklyView)
 
-    private fun bind(position: Int, view: View) {
-
+        weeklyView.setWeekIndex(position)
+        return weeklyView
     }
 
 }

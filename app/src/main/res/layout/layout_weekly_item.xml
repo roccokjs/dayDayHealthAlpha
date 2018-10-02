@@ -51,7 +51,7 @@
 		app:layout_constraintEnd_toStartOf="@+id/textViewFri"
 		app:layout_constraintHorizontal_bias="0.5"
 		app:layout_constraintStart_toEndOf="@+id/textViewWed"
-		app:layout_constraintTop_toTopOf="parent" />
+		app:layout_constraintTop_toTopOf="parent"/>
 
 	<TextView
 		android:id="@+id/textViewFri"
@@ -91,8 +91,9 @@
 
 	<TextView
 		android:id="@+id/textViewMonDate"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:gravity="center"
 		android:text="10"
 		app:layout_constraintBottom_toBottomOf="@+id/textViewTueDate"
 		app:layout_constraintEnd_toEndOf="@+id/textViewMon"
@@ -101,8 +102,9 @@
 
 	<TextView
 		android:id="@+id/textViewTueDate"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:gravity="center"
 		android:text="11"
 		app:layout_constraintBottom_toBottomOf="@+id/textViewWedDate"
 		app:layout_constraintEnd_toEndOf="@+id/textViewTue"
@@ -111,19 +113,21 @@
 
 	<TextView
 		android:id="@+id/textViewWedDate"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:gravity="center"
 		android:text="12"
-		app:layout_constraintBottom_toBottomOf="@+id/textViewThurDate"
+		app:layout_constraintBottom_toBottomOf="@+id/textViewThuDate"
 		app:layout_constraintEnd_toEndOf="@+id/textViewWed"
 		app:layout_constraintStart_toStartOf="@+id/textViewWed"
-		app:layout_constraintTop_toTopOf="@+id/textViewThurDate"/>
+		app:layout_constraintTop_toTopOf="@+id/textViewThuDate"/>
 
 	<TextView
-		android:id="@+id/textViewThurDate"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
+		android:id="@+id/textViewThuDate"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
 		android:layout_marginTop="8dp"
+		android:gravity="center"
 		android:text="13"
 		app:layout_constraintEnd_toEndOf="@+id/textViewThur"
 		app:layout_constraintStart_toStartOf="@+id/textViewThur"
@@ -131,18 +135,20 @@
 
 	<TextView
 		android:id="@+id/textViewFriDate"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:gravity="center"
 		android:text="14"
-		app:layout_constraintBottom_toBottomOf="@+id/textViewThurDate"
+		app:layout_constraintBottom_toBottomOf="@+id/textViewThuDate"
 		app:layout_constraintEnd_toEndOf="@+id/textViewFri"
 		app:layout_constraintStart_toStartOf="@+id/textViewFri"
-		app:layout_constraintTop_toTopOf="@+id/textViewThurDate"/>
+		app:layout_constraintTop_toTopOf="@+id/textViewThuDate"/>
 
 	<TextView
 		android:id="@+id/textViewSatDate"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:gravity="center"
 		android:text="15"
 		app:layout_constraintBottom_toBottomOf="@+id/textViewFriDate"
 		app:layout_constraintEnd_toEndOf="@+id/textViewSat"
@@ -151,8 +157,9 @@
 
 	<TextView
 		android:id="@+id/textViewSunDate"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
+		android:layout_width="30dp"
+		android:layout_height="30dp"
+		android:gravity="center"
 		android:text="16"
 		app:layout_constraintBottom_toBottomOf="@+id/textViewSatDate"
 		app:layout_constraintEnd_toEndOf="@+id/textViewSun"
